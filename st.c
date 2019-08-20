@@ -33,7 +33,7 @@
 #define UTF_SIZ       4
 #define ESC_BUF_SIZ   (128*UTF_SIZ)
 #define ESC_ARG_SIZ   16
-#define STR_BUF_SIZ   ESC_BUF_SIZ
+#define STR_BUF_SIZ   (256*ESC_BUF_SIZ) /* OSC-52: 131k payload (43k text) */
 #define STR_ARG_SIZ   ESC_ARG_SIZ
 
 /* macros */
